@@ -14,6 +14,7 @@ namespace ProjCadastro.Controllers
     {
         public IActionResult Index()
         {
+            var cpf = HttpContext.Session.GetString("usuarioCpf");
             AgendamentoModel model = new AgendamentoModel();
             Contexto context = new Contexto();
             model.ListaVacinas = context.Vacina.ToList();

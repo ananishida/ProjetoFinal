@@ -41,9 +41,9 @@
     <br />
     <p>Histórico de vacinas</p>
     <br />
-    <table class="table table-bordered">
+    <table class="table table-bordered" >
         <thead>
-            <tr>
+            <tr style="background:#86cea1">
                 <th>Vacina</th>
                 <th>Dose</th>
                 <th>Data</th>
@@ -56,7 +56,7 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
+                <tr style="background:#8eade7">
 
                     <td>@item.vacina.Nome</td>
                     <td>@item.Dose</td>

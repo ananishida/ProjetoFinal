@@ -4,28 +4,31 @@
 @{
 }
 @model ProjCadastro.Models.AgendamentoModel
+    <style>
+    </style>
 
-<h1>Agendamento concluído com sucesso!</h1>
-<br />
-<br />
-<table>
-    <tr>
-        <td>Nome:</td>
-        <td>@Model.cidadao.Nome</td>
-    </tr>
-    <tr>
-        <td>Vacina:</td>
-        <td>@Model.vacina.Nome</td>
-    </tr>
-    <tr>
-        <td> Unidade de atendimento:</td>
-        <td>@Model.unidade.Nome</td>
-    </tr>
-    <tr>
-        <td> Data de agendamento:</td>
-        <td>@Model.agenda.dataagendamento</td>
-    </tr>
-</table>
+    <h1>Agendamento concluído com sucesso!</h1>
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td>Nome:</td>
+            <td>@Model.cidadao.Nome</td>
+        </tr>
+        <tr>
+            <td>Vacina:</td>
+            <td>@Model.vacina.Nome</td>
+        </tr>
+        <tr>
+            <td> Unidade de atendimento:</td>
+            <td>@Model.unidade.Nome</td>
+        </tr>
+        <tr>
+            <td> Data de agendamento:</td>
+            <td>@Model.agenda.dataagendamento</td>
+        </tr>
+    </table>
+    <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-vacina_114360-5361.jpg?size=626&ext=jpg" alt="Alternate Text" width="30%" height="30%" />
 
 
 

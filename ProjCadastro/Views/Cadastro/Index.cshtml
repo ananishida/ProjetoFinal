@@ -15,7 +15,7 @@
         </div>
         @using (Html.BeginForm("Cadastro", "Cadastro", FormMethod.Post))
         {
-            @Html.TextBoxFor(x => x.Cidadao.Nome, new { @class = "fadeIn second", placeholder = "Nome completo" })
+            @Html.TextBoxFor(x => x.Cidadao.Nome, new { @class = "fadeIn second", placeholder = "Nome completo"})
             @Html.TextBoxFor(x => x.Cidadao.NomeMae, new { @class = "fadeIn second", placeholder = "Nome da mãe" })
             @Html.TextBoxFor(x => x.Cidadao.Cpf, new { @class = "fadeIn second", placeholder = "CPF" })
             @Html.TextBoxFor(x => x.Email, new { @class = "fadeIn second", placeholder = "E-mail" })
@@ -27,6 +27,7 @@
         <div id="formFooter">
             <a class="underlineHover" href="#">Já possui um cadastro?  Clique aqui para acessar!</a>
         </div>
+        @ViewBag.errosenha
 
     </div>
 </div>

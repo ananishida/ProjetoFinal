@@ -38,15 +38,15 @@ namespace ProjCadastro.Controllers
                 else
                 {
                     ViewBag.errosenha = "O nome da mãe está incorreto";
-                    return View(usuario);
+                    return View("Index",usuario);
                 }
             }
             else
             {
                 ViewBag.errosenha = "As duas senhas devem ser iguais!";
-                return View(usuario);
+                return View("Index", usuario);
             }
-            
+
             return RedirectToAction("confirmacadastro");
         }
         public IActionResult confirmacadastro()
