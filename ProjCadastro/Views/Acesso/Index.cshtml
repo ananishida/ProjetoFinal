@@ -1,0 +1,27 @@
+﻿@*
+*@
+@{
+
+}
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        @using (Html.BeginForm("Acesso", "Acesso", FormMethod.Post))
+        {
+            <div class="fadeIn first">
+                <img src="https://img.myloview.com.br/posters/login-icon-vector-user-symbol-simple-linear-pictogram-user-interface-account-log-in-700-253920337.jpg" id="icon" alt="User Icon" />
+            </div>
+
+        <form>
+            <input type="text" id="cpf" class="fadeIn second" name="cpf" placeholder="CPF">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Senha">
+            <input type="submit" class="fadeIn fourth" value="Acessar">
+        </form>
+
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Esqueceu a senha?</a>
+        </div>
+        }
+    </div>
+</div>
+

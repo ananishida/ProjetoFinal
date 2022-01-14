@@ -1,0 +1,73 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Repositorio.Entidade.CarteiraVacina>
+<style>
+    .link {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        color: #fff;
+        background-color: #0062cc;
+        border-color: #005cbf;
+    }
+        .link:hover {
+            color: #fff;
+        }
+</style>
+
+
+<div class="container">
+    <h1>Carteirinha de Vacinação</h1>
+    <p>Veja como está a sua carteirinha de vacinas!</p>
+    <br />
+
+    <a href="/Agendamento" class=" link">Clique aqui para agendar a sua vacina</a>
+    <br />
+    <br />
+
+    <br />
+    <p>Histórico de vacinas</p>
+    <br />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Vacina</th>
+                <th>Dose</th>
+                <th>Data</th>
+                <th>Lote</th>
+                <th>Fabricante</th>
+                <th>Laboratório</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.vacina.Nome</td>
+                    <td>@item.Dose</td>
+                    <td>@item.dtVacina</td>
+                    <td>@item.Lote</td>
+                    <td>@item.Fabricante</td>
+                    <td>@item.Laboratório</td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
